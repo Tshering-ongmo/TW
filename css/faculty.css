@@ -1,0 +1,141 @@
+.faculty-section {
+    background-color: #f0f8ff; /* Optional: for a light background */
+    padding: 50px 0;
+}
+
+.faculty-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #d4dbf8;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.faculty-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.faculty-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.faculty-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faculty-details h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.fcontainer {
+    max-width: 1200px;
+    
+}
+.fcontainer .row {
+    gap: 30px;
+}
+
+/*===============================*/
+/*========Faculty pages==========*/
+/* Program Section */
+.faculties {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+  
+.programs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+  
+ /* Program Card */
+.program {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% / 2 - 20px); /* Adjust card width for responsiveness */
+    max-width: 500px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.program:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Lecturer Card */
+.lecturers {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 15px;
+justify-content: center;
+}
+  
+.lecturer {
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+  
+.lecturer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+  
+.lecturer-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 20%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+  
+.lecturer h4 {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #333;
+}
+  
+.ltitle {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+
+
+
+.lecturer h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    color: #005b99;
+}
+
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    .program {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  

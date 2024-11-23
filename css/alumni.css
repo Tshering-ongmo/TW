@@ -1,0 +1,135 @@
+section {
+    padding: 50px 0px;
+}
+
+.cta-button {
+    padding: 15px;
+}
+.cta-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1838c7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16;
+}
+
+p {
+    padding: 10px;
+}
+
+/* Container for the Alumni Album Section */
+.album {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.album h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Grid layout for Alumni Album */
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+/* General Album Section */
+.album {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.album h2 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Grid layout for Alumni Album */
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Styling for each Alumni Card */
+.alumni-card {
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.alumni-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.alumni-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Name and Description Styling */
+.alumni-card p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #003366;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* Alumni Quote Styling */
+.alumni-card span {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Author Information */
+.alumni-card .author {
+    font-size: 0.9rem;
+    color: #003366;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .album-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .album-grid {
+        grid-template-columns: 1fr;
+    }
+}

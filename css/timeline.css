@@ -1,0 +1,174 @@
+/**********************************/
+/********* Timeline CSS *********/
+/**********************************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+section {
+    padding: 50px 0px;
+}
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #00AEEF;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 48px;
+    right: -8px;
+    background: #00AEEF;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.timeline-item.right::after {
+    left: -8px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 46px;
+  right: 10px;
+  z-index: 1;
+  border: 10px solid;
+  border-color: transparent transparent transparent #00AEEF;
+}
+
+.timeline-item.right::before {
+  left: 10px;
+  border-color: transparent #00AEEF transparent transparent;
+}
+
+.timeline-item .year {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 48px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0c4d64;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.timeline-item.left .year {
+    right: -75px;
+}
+
+.timeline-item.right .year {
+    left: -75px;
+}
+
+.timeline-item .content {
+    padding: 30px;
+    background: #ffffff;
+    position: relative;
+    border: 1px solid #eeeeee;
+    border-right: 5px solid #00AEEF;
+    border-left: 5px solid #eeeeee;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .08);
+}
+
+.timeline-item.right .content {
+    border-right: 5px solid #eeeeee;
+    border-left: 5px solid #00AEEF;
+    border-radius: 0 15px 15px 0;
+}
+
+.timeline-item .content h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-weight: normal;
+    color: #00AEEF;
+}
+
+.timeline-item .content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #454545;
+}
+
+@media (max-width: 767.98px) {
+    .timeline::after {
+        left: 90px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 30px;
+    }
+    
+    .timeline-item.right {
+        left: 0%;
+    }
+
+    .timeline-itemcontainer.left::after, 
+    .timeline-item.right::after {
+        left: 82px;
+    }
+    
+    .timeline-item.left::before,
+    .timeline-item.right::before {
+        left: 100px;
+        border-color: transparent #00AEEF transparent transparent;
+    }
+    
+    .timeline-item.left .year,
+    .timeline-item.right .year {
+        right: auto;
+        left: 15px;
+    }
+    
+    .timeline-item.left .content,
+    .timeline-item.right .content {
+        border-right: 5px solid #eeeeee;
+        border-left: 5px solid #00AEEF;
+        border-radius: 0 15px 15px 0;
+    }
+}

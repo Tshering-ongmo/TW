@@ -1,0 +1,308 @@
+.container a .logo {
+    width: 140px;
+}
+
+/*Introduction Section*/
+/* Input group customization */
+.input-group {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 50px;
+}
+
+.input-group .btn {
+    padding: 28px 20px;
+    height: auto;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.input-group-prepend .btn {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-weight: 500;
+}
+
+.input-group .form-control {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 20px;
+    height: auto;
+}
+
+.input-group-append .btn {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    border-color: #005bb5;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #005bb5;
+    border-color: #FFD700;
+}
+
+/* Dropdown menu adjustments */
+.dropdown-menu a {
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+
+body {
+    padding: 5px 0px;
+    margin: 0px;
+    background-color: lightgray;
+}
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+} 
+
+/*** Service ***/
+.service-item {
+    background: #f8f9fa; /* Light cyan-like background */
+    border-radius: 8px; /* Add rounded corners */
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    background: #00bcd4; /* Aqua color (match uploaded design) */
+    transform: translateY(-10px); /* Smooth lift */
+}
+
+.service-item:hover h5, .service-item:hover p, .service-item:hover i {
+    color: #fff !important; /* Make text and icon white */
+}
+
+.service-item h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #2f3031; /* Muted gray for text */
+}
+.service-item {
+    border-radius: 12px;
+}
+.row.g-4 {
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Distribute items evenly with space between */
+    flex-wrap: wrap; /* Wrap items if the screen size is smaller */
+    gap: 5px; /* Set the desired space between boxes */
+}
+.col-lg-3 {
+    flex: 1 1 calc(25% - 20px); /* 4 items per row with gap accounted for */
+    max-width: calc(25% - 20px); /* Make sure width matches */
+    box-sizing: border-box;
+}
+
+
+.service-item {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100%; /* Ensure full height alignment */
+}
+
+.service-item:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.service-item {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+@media (max-width: 992px) {
+    .col-lg-3 {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row for medium screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .col-lg-3 {
+        flex: 1 1 100%; /* 1 item per row for small screens */
+        max-width: 100%;
+    }
+}
+
+/* Mission-vision*/
+/* Styling for the text section */
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Paragraph styling */
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Button styling */
+.btn.toggle-btn {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #007bff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn.toggle-btn.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn.toggle-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Content section visibility */
+.content-section {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.content-section.active {
+    opacity: 1;
+    display: block;
+}
+
+
+/*Programes*/
+
+.description {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #302f2f;
+}
+
+
+.program-content {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #e6f2f5;
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.program-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+   
+.text-section {
+    flex: 1;
+    padding-right: 20px;
+}
+.text-section h3 {
+    color: #00AEEF;
+}
+.text-section p {
+    font-size: 1rem;
+    color: #555;
+}
+.image-section {
+    flex: 1;
+}
+.program-button {
+    background-color: #FFD700;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+}
+.program-button:hover {
+    background-color: #f89807;
+}
+
+/*News*/
+.card-img-top img {
+    
+    object-fit: cover;
+    border-bottom: 5px solid #007bff;
+}
+
+.card-body {
+    padding: 20px;
+    border-top: 5px solid #007bff;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.btn-warning {
+    font-weight: bold;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #ffcc00;
+    border: none;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.btn-warning:hover {
+    background-color: #ffb700;
+}
+
+/*Counter Section*/
+.counter-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0;
+}
+.counter {
+    font-size: 69px;
+    font-weight: 600;
+    color: #0275d8;
+}
+.counter-title {
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #555;
+}

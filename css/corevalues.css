@@ -1,0 +1,23 @@
+/* Core Values Section Styling */
+
+.core-values-section {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.core-values-list {
+    list-style-type: disc; /* Round bullets */
+    list-style-position: inside; /* Bullets inside the text */
+    padding-left: 20px;
+    font-size: 20px;
+    color: #080808;
+}
+
+.core-values-list li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.core-values-list li strong {
+    color: #080808; /* Highlighted text color */
+}

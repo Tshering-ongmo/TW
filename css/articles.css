@@ -1,0 +1,47 @@
+        h2 {
+            color: #000;
+        }
+        .link {
+            color: #000;
+        }
+        /* Image styling for alumni description */
+        .section-title img {
+            width: 60px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+            color: #003366;
+        }
+
+        .section-title span {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .alumni-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .alumni-description p {
+            text-align: justify;
+            line-height: 1.8;
+            margin-top: 15px;
+        }
+
+        .alumni-description img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }

@@ -1,0 +1,51 @@
+/* Dropdown Section */
+.dropdown-container {
+    margin: 20px 0;
+    border: 2px solid #005b99;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dropdown-header {
+    padding: 15px;
+    background-color: #005b99;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-content {
+    padding: 25px;
+    background-color: #f0f0f0;
+    display: none;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Toggle icon */
+.dropdown-header .toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Rotate icon on open */
+.dropdown-container.open .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.text-section {
+    padding: 40px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 2px;
+    word-spacing: 0.2cm;
+}
+
+hr {
+    width: 100%; /* Adjusts the width of the <hr> */
+    height: 2px; /* Adjusts the height (thickness) of the <hr> */
+    border: none; /* Removes default border */
+    background-color: #ffdb0d; /* Sets the color of the <hr> */
+    margin: 20px 0; /* Adds space above and below the <hr> */
+  }
